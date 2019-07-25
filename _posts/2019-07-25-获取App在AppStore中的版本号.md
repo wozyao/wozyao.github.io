@@ -10,7 +10,8 @@ tags:								#标签
     - iOS
 ---
 
-###导语
+### 导语
+
 >开发中我们可能会遇到这样的需求，当AppStore中有新版本迭代更新，在用户点开APP的时候弹框提醒客户去AppStore更新APP。这里面就有个关键点，判断当前APP与AppStore中的版本高低，若一样，则无需进行提示；反之则弹框提示（用户使用版本不会比AppStore版本高）。下面就讲一下如何获取APP在AppStore中的版本，惯例直接上代码，O(∩_∩)O
 ```
 - (void)viewDidLoad {

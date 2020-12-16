@@ -13,7 +13,7 @@ tags:								#标签
 ### 导语
 
 >开发中我们可能会遇到这样的需求，当AppStore中有新版本迭代更新，在用户点开APP的时候弹框提醒客户去AppStore更新APP。这里面就有个关键点，判断当前APP与AppStore中的版本高低，若一样，则无需进行提示；反之则弹框提示（用户使用版本不会比AppStore版本高）。下面就讲一下如何获取APP在AppStore中的版本，惯例直接上代码，O(∩_∩)O
-```
+```objectivec
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -28,7 +28,7 @@ tags:								#标签
 }
 ```
 简单介绍一下上面的代码，请求链接中的id为APP在AppStore中的一个序号，你可以看成一个唯一标识符，下面放几张图片给还不清楚如何获取的同学科普下，我们以微信为例
-![QQ20151210-0@2x.png](https://upload-images.jianshu.io/upload_images/355579-4ba31e8846499890.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![微信](https://upload-images.jianshu.io/upload_images/355579-4ba31e8846499890.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ![QQ20151210-1@2x.png](http://upload-images.jianshu.io/upload_images/355579-9ac87ee688ad6640.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ***
 返回的responsObjet返回的是一个字典，results键取出来是一个单个元素的数组，所以我用lastObject这个方法取的元素（当然你也可以firstObject或者[0]），数组取出的元素同样是一个字典，version键对应的值就是AppStore中的版本号。字典里的所有键值对几乎涵盖了APP在AppStore中的各种信息，有兴趣的小伙伴可以打个断点在控制台po一下，就酱紫啦~

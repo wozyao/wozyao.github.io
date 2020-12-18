@@ -28,7 +28,7 @@ tags:								#标签
 }
 ```
 简单介绍一下上面的代码，请求链接中的id为APP在AppStore中的一个序号，你可以看成一个唯一标识符，下面放几张图片给还不清楚如何获取的同学科普下，我们以微信为例
-![微信](https://upload-images.jianshu.io/upload_images/355579-4ba31e8846499890.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![355579-4ba31e8846499890.png](https://i.loli.net/2020/12/18/B249ebfuI7qv16i.png)
 ![QQ20151210-1@2x.png](http://upload-images.jianshu.io/upload_images/355579-9ac87ee688ad6640.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ***
 返回的responsObjet返回的是一个字典，results键取出来是一个单个元素的数组，所以我用lastObject这个方法取的元素（当然你也可以firstObject或者[0]），数组取出的元素同样是一个字典，version键对应的值就是AppStore中的版本号。字典里的所有键值对几乎涵盖了APP在AppStore中的各种信息，有兴趣的小伙伴可以打个断点在控制台po一下，就酱紫啦~

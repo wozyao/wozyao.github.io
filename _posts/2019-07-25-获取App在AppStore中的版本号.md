@@ -38,7 +38,7 @@ tags:								#标签
 
 ---
 **2019.06.06更新**
-1、有小伙伴反馈用 "https://itunes.apple.com/lookup?id=" 获取版本号，会出现延迟或请求回来的版本号不稳定还有就是与刚刚发布的版本号对不上。这是因为连接国外的服务器，所以会有延迟。 解决：使用 "https://itunes.apple.com/cn/lookup?id=" 即可；
+1、有小伙伴反馈用[https://itunes.apple.com/lookup?id=](https://itunes.apple.com/lookup?id=)获取版本号，会出现延迟或请求回来的版本号不稳定还有就是与刚刚发布的版本号对不上。这是因为连接国外的服务器，所以会有延迟。 解决：使用[https://itunes.apple.com/cn/lookup?id=](https://itunes.apple.com/cn/lookup?id=)即可；
 2、获取的App的id，可以直接在App Store贵司的App的App，这里以微信为例，参照下图，即可获取：
 ![blob](https://i.loli.net/2020/12/18/cWBOGMa89ElzKjr.png)
 ![blob](https://i.loli.net/2020/12/18/GJ1t6i74ekbDVPY.png)
